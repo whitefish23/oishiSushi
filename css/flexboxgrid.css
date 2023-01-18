@@ -3,8 +3,8 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .row {
@@ -21,8 +21,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -1rem;
-  margin-left: -1rem;
+  margin-right: -18px;
+  margin-left: -18px;
 }
 
 .row.reverse {
@@ -56,8 +56,14 @@
   -ms-flex: 0 0 auto;
   -webkit-box-flex: 0;
   flex: 0 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+.box {
+  margin-top: 18px;
+  background: #fff;
+  padding: 40px;
 }
 
 .col-xs {
@@ -248,10 +254,7 @@
   order: 1;
 }
 
-@media only screen and (min-width: 48em) {
-  .container {
-    width: 46rem;
-  }
+@media only screen and (min-width: 1280px) {
 
   .col-sm,
   .col-sm-1,
@@ -463,10 +466,7 @@
   }
 }
 
-@media only screen and (min-width: 62em) {
-  .container {
-    width: 61rem;
-  }
+@media only screen and (min-width: 760px) {
 
   .col-md,
   .col-md-1,
