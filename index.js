@@ -1,4 +1,4 @@
-const massive = {
+const obj = {
   name: 'Alex',
   lastName: 'Simpoponsky',
   age: '20'
