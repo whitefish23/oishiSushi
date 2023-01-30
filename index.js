@@ -1,7 +1,10 @@
-const obj = {
-  name: 'Alex',
-  lastName: 'Simpoponsky',
-  age: '20'
-};
+const swiperPopu = new Swiper(".popular", {
+  slidesPerView: 4,
+  spaceBetween: 15,
 
-localStorage.setItem('item', JSON.stringify(massive))
+  scrollbar: {
+    el: ".scrollbar-popular",
+    draggable: true,
+    dragSize: 143,
+  },
+});

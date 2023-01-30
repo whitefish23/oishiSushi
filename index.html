@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/flexboxgrid.css">
 
 
@@ -18,7 +18,6 @@
 </head>
 
 <body class="body">
-
 
   <header class="header">
     <div class="container">
@@ -64,7 +63,7 @@
           </div>
           <div class="header__btn-icon">
             <div class="header__icon-wrapper">
-              <img src="./svg/like .svg" alt="" class="header-icon">
+              <img src="./svg/like.svg" alt="" class="header-icon">
             </div>
           </div>
           <div class="header__btn-basket">
@@ -111,13 +110,26 @@
                       <div class="banner__price">
                         320 Р
                       </div>
+                      <img src="./svg/rectangle.svg" alt="">
                       <div class="banner__weight">
                         260 гр / 6 шт.
                       </div>
                     </div>
                     <div class="banner__btn-add">
-                      Добавить к заказу
-                      <img src="./svg/basket.svg" alt="" class="banner__basket">
+                      <div class="banner__btn-bg"></div>
+                      <div class="banner__btn-setting">
+                        <div class="banner__btn-plus">
+                          <img src="./svg/plus.svg" alt="">
+                        </div>
+                        <div class="banner__counter">1</div>
+                        <div class="banner__btn-minus">
+                          <img src="./svg/minus.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="banner__btn-white">
+                        Добавить к заказу
+                        <img src="./svg/basket.svg" alt="" class="banner__basket">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -139,7 +151,7 @@
           <div class="box">
             <div class="box__title">Роллы</div>
             <div class="box__img-box">
-              <img src="./img/rolls.png" alt="">
+              <img src="./img/rolls.png" alt="" class="box__img">
             </div>
           </div>
         </div>
@@ -151,7 +163,7 @@
           <div class="box">
             <div class="box__title">Сеты</div>
             <div class="box__img-box">
-              <img src="./img/sets.png" alt="">
+              <img src="./img/sets.png" alt="" class="box__img">
             </div>
           </div>
         </div>
@@ -163,7 +175,7 @@ col-lg-4">
           <div class="box">
             <div class="box__title">Запеченные роллы</div>
             <div class="box__img-box">
-              <img src="./img/hotRolls.png" alt="">
+              <img src="./img/hotRolls.png" alt="" class="box__img">
             </div>
           </div>
         </div>
@@ -175,7 +187,7 @@ col-lg-4">
           <div class="box">
             <div class="box__title">Воки</div>
             <div class="box__img-box">
-              <img src="./img/voks.png" alt="">
+              <img src="./img/voks.png" alt="" class="box__img">
             </div>
           </div>
         </div>
@@ -187,7 +199,7 @@ col-lg-4">
           <div class="box">
             <div class="box__title">Супы</div>
             <div class="box__img-box">
-              <img src="./img/sup.png" alt="">
+              <img src="./img/sup.png" alt="" class="box__img">
             </div>
           </div>
         </div>
@@ -199,12 +211,301 @@ col-lg-4">
           <div class="box">
             <div class="box__title">Напитки</div>
             <div class="box__img-box">
-              <img src="./img/drinks.png" alt="">
+              <img src="./img/drinks.png" alt="" class="box__img">
             </div>
           </div>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <section class="popular">
+    <div class="container">
+      <div class="popular__title">
+        Популярное
+      </div>
+      <div class="swiper popular">
+        <div class="swiper-wrapper popular__slider-wrapper">
+
+
+          <div class="swiper-slide popular__card">
+            <div class="popular__card-visual">
+              <div class="popular__icon">
+                <img src="./svg/star.svg" alt="">
+              </div>
+              <div class="popular__vis-img">
+                <img src="./img/rollCalifornia.png" alt="" class="popular__img">
+              </div>
+              <div class="popular__likes">
+                <img src="./svg/like.svg" alt="">
+                <div class="popular__like-num">54</div>
+              </div>
+            </div>
+            <div class="popular__card-desk">
+              <div class="popular__card-title">Ролл</div>
+              <div class="popular__card-name">Калифорния</div>
+              <div class="popular__card-composition">Нори, креветка, авокадо, огурец</div>
+              <div class="popular__info">
+                <div class="popular__price">
+                  320 Р
+                </div>
+                <img src="./svg/rectangle.svg" alt="">
+                <div class="popular__weight">
+                  260 гр / 6 шт.
+                </div>
+              </div>
+              <div class="popular__btn-add">
+                <div class="popular__btn-bg"></div>
+                <div class="popular__btn-setting">
+                  <div class="popular__btn-plus">
+                    <img src="./svg/plus.svg" alt="">
+                  </div>
+                  <div class="popular__counter">1</div>
+                  <div class="popular__btn-minus">
+                    <img src="./svg/minus.svg" alt="">
+                  </div>
+                </div>
+                <div class="popular__btn-orange">
+                  Добавить к заказу
+                  <img src="./svg/basket-white.svg" alt="" class="popular__basket">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide popular__card">
+            <div class="popular__card-visual">
+              <div class="popular__icon">
+                <img src="./svg/star.svg" alt="">
+              </div>
+              <div class="popular__vis-img">
+                <img src="./img/miso.png" alt="" class="popular__img">
+              </div>
+              <div class="popular__likes">
+                <img src="./svg/like.svg" alt="">
+                <div class="popular__like-num">41</div>
+              </div>
+            </div>
+            <div class="popular__card-desk">
+              <div class="popular__card-title">Суп</div>
+              <div class="popular__card-name">Мисо</div>
+              <div class="popular__card-composition">Сыр тофу, бульон из комбу и тунца,
+                вакаме, паста мисо, лук-порей</div>
+              <div class="popular__info">
+                <div class="popular__price">
+                  400 Р
+                </div>
+                <img src="./svg/rectangle.svg" alt="">
+                <div class="popular__weight">
+                  350 гр.
+                </div>
+              </div>
+              <div class="popular__btn-add">
+                <div class="popular__btn-bg"></div>
+                <div class="popular__btn-setting">
+                  <div class="popular__btn-plus">
+                    <img src="./svg/plus.svg" alt="">
+                  </div>
+                  <div class="popular__counter">1</div>
+                  <div class="popular__btn-minus">
+                    <img src="./svg/minus.svg" alt="">
+                  </div>
+                </div>
+                <div class="popular__btn-orange">
+                  Добавить к заказу
+                  <img src="./svg/basket-white.svg" alt="" class="popular__basket">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide popular__card">
+            <div class="popular__card-visual">
+              <div class="popular__icon">
+                <img src="./svg/star.svg" alt="">
+              </div>
+              <div class="popular__vis-img">
+                <img src="./img/wok.png" alt="" class="popular__img">
+              </div>
+              <div class="popular__likes">
+                <img src="./svg/like.svg" alt="">
+                <div class="popular__like-num">26</div>
+              </div>
+            </div>
+            <div class="popular__card-desk">
+              <div class="popular__card-title">Вок</div>
+              <div class="popular__card-name">С тофу и яицом</div>
+              <div class="popular__card-composition">Лапша соба, яица перепелиные, тофу,
+                лук-порей, зелень, соевые соус</div>
+              <div class="popular__info">
+                <div class="popular__price">
+                  320 Р
+                </div>
+                <img src="./svg/rectangle.svg" alt="">
+                <div class="popular__weight">
+                  350 гр.
+                </div>
+              </div>
+              <div class="popular__btn-add">
+                <div class="popular__btn-bg"></div>
+                <div class="popular__btn-setting">
+                  <div class="popular__btn-plus">
+                    <img src="./svg/plus.svg" alt="">
+                  </div>
+                  <div class="popular__counter">1</div>
+                  <div class="popular__btn-minus">
+                    <img src="./svg/minus.svg" alt="">
+                  </div>
+                </div>
+                <div class="popular__btn-orange">
+                  Добавить к заказу
+                  <img src="./svg/basket-white.svg" alt="" class="popular__basket">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide popular__card">
+            <div class="popular__card-visual">
+              <div class="popular__icon">
+                <img src="./svg/star.svg" alt="">
+              </div>
+              <div class="popular__vis-img">
+                <img src="./img/fill.png" alt="" class="popular__img">
+              </div>
+              <div class="popular__likes">
+                <img src="./svg/like.svg" alt="">
+                <div class="popular__like-num">26</div>
+              </div>
+            </div>
+            <div class="popular__card-desk">
+              <div class="popular__card-title">Ролл</div>
+              <div class="popular__card-name">Филадельфия</div>
+              <div class="popular__card-composition">Рис, лосось, сыр филадельфия,
+                авокадо, нори</div>
+              <div class="popular__info">
+                <div class="popular__price">
+                  320 Р
+                </div>
+                <img src="./svg/rectangle.svg" alt="">
+                <div class="popular__weight">
+                  260 гр / 6 шт.
+                </div>
+              </div>
+              <div class="popular__btn-add">
+                <div class="popular__btn-bg"></div>
+                <div class="popular__btn-setting">
+                  <div class="popular__btn-plus">
+                    <img src="./svg/plus.svg" alt="">
+                  </div>
+                  <div class="popular__counter">1</div>
+                  <div class="popular__btn-minus">
+                    <img src="./svg/minus.svg" alt="">
+                  </div>
+                </div>
+                <div class="popular__btn-orange">
+                  Добавить к заказу
+                  <img src="./svg/basket-white.svg" alt="" class="popular__basket">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide popular__card">
+            <div class="popular__card-visual">
+              <div class="popular__icon">
+                <img src="./svg/star.svg" alt="">
+              </div>
+              <div class="popular__vis-img">
+                <img src="./img/rollCalifornia.png" alt="" class="popular__img">
+              </div>
+              <div class="popular__likes">
+                <img src="./svg/like.svg" alt="">
+                <div class="popular__like-num">54</div>
+              </div>
+            </div>
+            <div class="popular__card-desk">
+              <div class="popular__card-title">Ролл</div>
+              <div class="popular__card-name">Калифорния</div>
+              <div class="popular__card-composition">Нори, креветка, авокадо, огурец</div>
+              <div class="popular__info">
+                <div class="popular__price">
+                  320 Р
+                </div>
+                <img src="./svg/rectangle.svg" alt="">
+                <div class="popular__weight">
+                  260 гр / 6 шт.
+                </div>
+              </div>
+              <div class="popular__btn-add">
+                <div class="popular__btn-bg"></div>
+                <div class="popular__btn-setting">
+                  <div class="popular__btn-plus">
+                    <img src="./svg/plus.svg" alt="">
+                  </div>
+                  <div class="popular__counter">1</div>
+                  <div class="popular__btn-minus">
+                    <img src="./svg/minus.svg" alt="">
+                  </div>
+                </div>
+                <div class="popular__btn-orange">
+                  Добавить к заказу
+                  <img src="./svg/basket-white.svg" alt="" class="popular__basket">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide popular__card">
+            <div class="popular__card-visual">
+              <div class="popular__icon">
+                <img src="./svg/star.svg" alt="">
+              </div>
+              <div class="popular__vis-img">
+                <img src="./img/miso.png" alt="" class="popular__img">
+              </div>
+              <div class="popular__likes">
+                <img src="./svg/like.svg" alt="">
+                <div class="popular__like-num">41</div>
+              </div>
+            </div>
+            <div class="popular__card-desk">
+              <div class="popular__card-title">Суп</div>
+              <div class="popular__card-name">Мисо</div>
+              <div class="popular__card-composition">Сыр тофу, бульон из комбу и тунца,
+                вакаме, паста мисо, лук-порей</div>
+              <div class="popular__info">
+                <div class="popular__price">
+                  400 Р
+                </div>
+                <img src="./svg/rectangle.svg" alt="">
+                <div class="popular__weight">
+                  350 гр.
+                </div>
+              </div>
+              <div class="popular__btn-add">
+                <div class="popular__btn-bg"></div>
+                <div class="popular__btn-setting">
+                  <div class="popular__btn-plus">
+                    <img src="./svg/plus.svg" alt="">
+                  </div>
+                  <div class="popular__counter">1</div>
+                  <div class="popular__btn-minus">
+                    <img src="./svg/minus.svg" alt="">
+                  </div>
+                </div>
+                <div class="popular__btn-orange">
+                  Добавить к заказу
+                  <img src="./svg/basket-white.svg" alt="" class="popular__basket">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -243,28 +544,7 @@ col-lg-4">
     </div>
   </footer>
 
-  <div class="popular">
-    <div class="container">
-      <div class="popular__title">
-        Популярное
-      </div>
-      <div class="popular__card">
-        <div class="popular__card-visual">
-          <div class="popular__icon">
-          <img src="./svg/star.svg" alt="">
-          </div>
-          <div class="popular__vis-img">
-            <img src="./img/rollCalifornia.png" alt="">
-          </div>
-          <div class="popular__likes">
-            <img src="./svg/like .svg" alt="">
-            <div class="popular__like-num">54</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
 </body>
 

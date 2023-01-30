@@ -232,7 +232,7 @@
   &__slider-discription {
     font-family: "Roboto";
     font-weight: 400;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
   }
 
   &__content {
@@ -242,27 +242,59 @@
 
   &__info {
     display: flex;
-    margin-bottom: 50px;
+    position: relative;
+    margin-bottom: 40px;
+    align-items: center;
   }
 
   &__price {
-    margin-right: 28px;
+    position: absolute;
+    left: 40px;
+    top: 12px;
   }
 
   &__weight {
     font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
+    margin-left: 26px;
   }
 
   &__btn-add {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+
+  &__btn-bg {
+    width: 47px;
+    height: 38px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    position: absolute;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+  }
+
+  &__btn-setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 7px 10px;
+    z-index: 2;
+  }
+
+  &__btn-white {
     background-color: white;
     color: #000000;
-    border: 1px solid rgba(0, 0, 0, 0.042);
     border-radius: 6px;
     padding: 20px 30px;
     display: inline-flex;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+
+  &__counter {
+    margin: 4px 0px;
   }
 
   &__basket {
@@ -289,6 +321,12 @@
     &__title {
       padding: 30px;
       font-size: 26px;
+    }
+
+    &__img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
   }
 }
@@ -355,19 +393,134 @@
 }
 
 .popular {
+  margin-bottom: 100px;
+
   &__title {
     font-size: 26px;
     margin-bottom: 30px;
   }
   &__card {
-    padding: 40px;
-    background-color: #fff;
-    display: inline-flex;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+    width: 391px;
+    height: 548px;
+    background-color: #ffffff;
     border-radius: 6px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
   }
-  &__vis-img{
+
+  &__card-visual {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__vis-img {
     height: 177px;
     width: 171px;
+    position: absolute;
+    top: 35px;
+    left: 112px;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__likes {
+    display: flex;
+  }
+
+  &__like-num {
+    margin-left: 5px;
+  }
+
+  &__info {
+    display: flex;
+    position: relative;
+    margin-bottom: 33px;
+    align-items: center;
+  }
+
+  &__card-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 11px;
+  }
+
+  &__card-name {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  &__card-composition {
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-bottom: 45px;
+    line-height: 24px;
+    opacity: 0.7;
+  }
+
+  &__price {
+    position: absolute;
+    left: 40px;
+    top: 12px;
+  }
+
+  &__weight {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 26px;
+  }
+
+  &__btn-add {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+
+  &__btn-bg {
+    width: 47px;
+    height: 38px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    position: absolute;
+    box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.07);
+  }
+
+  &__btn-setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 7px 10px;
+    z-index: 2;
+  }
+
+  &__btn-orange {
+    background-color: #f0af3b;
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px 30px;
+    display: inline-flex;
+    box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.07), 0px 15px 30px rgba(240, 175, 59, 0.2);
+    z-index: 2;
+  }
+
+  &__counter {
+    margin: 4px 0px;
+  }
+
+  &__basket {
+    padding-left: 18px;
+  }
+
+  .swiper-wrapper {
+    height: 548px;
   }
 }
