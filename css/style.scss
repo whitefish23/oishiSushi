@@ -11,6 +11,7 @@
   background-color: #e5e5e5;
   color: #404040;
   padding: 40px 20px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -206,8 +207,12 @@
     margin-left: 170px;
   }
 
-  &__slider {
-    position: relative;
+  &__slider-section {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    width: 633px;
+    height: 418px;
+    margin-left: 170px;
   }
 
   &__img-box {
@@ -237,7 +242,7 @@
 
   &__content {
     padding-top: 60px;
-    padding-left: 190px;
+    padding-left: 50%;
   }
 
   &__info {
@@ -299,6 +304,22 @@
 
   &__basket {
     padding-left: 18px;
+  }
+
+  .swiper {
+    margin-left: -145px;
+    height: 360px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 46px;
+    height: 5px;
+    border-radius: 6px;
+    background-color: #adadad;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #f0af3b;
   }
 }
 
@@ -433,10 +454,22 @@
 
   &__likes {
     display: flex;
+    align-items: center;
+  }
+
+  &__like-box {
+    height: 14px;
+    width: 16px;
+    margin-right: 5px;
+  }
+
+  &__likes-icon:hover {
+    background-image: url("../svg/icon-like-on.svg");
   }
 
   &__like-num {
     margin-left: 5px;
+    font-size: 12px;
   }
 
   &__info {
@@ -506,10 +539,11 @@
     background-color: #f0af3b;
     color: #fff;
     border-radius: 6px;
-    padding: 20px 30px;
-    display: inline-flex;
+    padding: 20px 52px;
     box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.07), 0px 15px 30px rgba(240, 175, 59, 0.2);
     z-index: 2;
+    display: flex;
+    align-items: center;
   }
 
   &__counter {
@@ -517,10 +551,43 @@
   }
 
   &__basket {
-    padding-left: 18px;
+    padding-left: 10px;
+  }
+
+  &__likes-icon {
+    cursor: pointer;
+  }
+
+  &__likes-icon:hover {
+    background-image: url("../svg/icon-like-on.svg");
+  }
+
+  .swiper {
+    height: 583px;
+    overflow: visible;
   }
 
   .swiper-wrapper {
     height: 548px;
+  }
+
+  .swiper-scrollbar-drag {
+    position: relative;
+    height: 8px;
+    top: -2px;
+    background: #f0af3b;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .scrollbar-popular {
+    position: absolute;
+    left: 40%;
+    bottom: 3px;
+    z-index: 10;
+    height: 4px;
+    width: 30%;
+    border-radius: 6px;
+    background: rgba(64, 64, 64, 0.1450980392);
   }
 }
